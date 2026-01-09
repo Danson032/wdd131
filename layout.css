@@ -1,43 +1,51 @@
 :root {
-    --primary-color: rgba(1, 1, 173);
-    --primary-color1: rgb(250, 235, 215);
-
+    --primary-color: rgb(1, 1, 173);
+    --light-color: rgb(250, 235, 215);
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+header, footer {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(images/H-background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
 }
 
 header {
-    background-image: url(images/H-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: var(--primary-color1);
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
-    border-radius: 0% 0%;
 }
 
-ul {
-    font-size: x-large;
+.nav-menu {
     list-style: none;
     display: flex;
-    gap: 74px;
+    gap: 60px;
     padding: 0;
     margin: 0;
 }
 
-ul li a {
-    color: var(--primary-color1);
+.nav-menu a {
+    color: var(--light-color);
     text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1 {
+.nav-menu a:hover {
+    background-color: var(--light-color);
     color: var(--primary-color);
+    border-radius: 4px;
 }
 
 main {
@@ -50,11 +58,17 @@ main section {
     flex: 1;
 }
 
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
 footer {
-    background-image: url(images/H-background.jpg);
     height: 60px;
-    width: 100%;
-    color: var(--primary-color1);
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+footer a {
+    color: var(--light-color);
 }

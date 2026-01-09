@@ -1,0 +1,60 @@
+:root {
+    --primary-color: rgba(8, 206, 255, 0.726);
+    --primary-color1: rgb(0, 17, 255);
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+header {
+    background-image: url(images/H-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    border-radius: 0% 0%;
+}
+
+ul {
+    font-size: x-large;
+    list-style: none;
+    display: flex;
+    gap: 74px;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(1, 1, 173);
+}
+
+main {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+}
+
+main section {
+    flex: 1;
+}
+
+footer {
+    background-image: url(images/H-background.jpg);
+    height: 60px;
+    width: 100%;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}

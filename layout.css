@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgba(8, 206, 255, 0.726);
-    --primary-color1: rgb(0, 17, 255);
+    --primary-color: rgba(1, 1, 173);
+    --primary-color1: rgb(250, 235, 215);
 
 }
 
@@ -14,7 +14,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: aliceblue;
+    color: var(--primary-color1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,12 +32,12 @@ ul {
 }
 
 ul li a {
-    color: antiquewhite;
+    color: var(--primary-color1);
     text-decoration: none;
 }
 
 h1 {
-    color: rgb(1, 1, 173);
+    color: var(--primary-color);
 }
 
 main {
@@ -54,7 +54,7 @@ footer {
     background-image: url(images/H-background.jpg);
     height: 60px;
     width: 100%;
-    color: antiquewhite;
+    color: var(--primary-color1);
     display: flex;
     justify-content: center;
 }

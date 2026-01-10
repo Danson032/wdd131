@@ -7,25 +7,23 @@ body {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
 }
-
-header, footer {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-    ),
-    url(images/H-background.jpg);
-    background-size: cover;
-    background-position: center;
-    color: var(--light-color);
-}
-
+    
 header {
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/images/H-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+    gap: 30%;
 }
-
+span{
+    color:var(--light-color);
+    font-size: x-large;
+}
 .nav-menu {
     list-style: none;
     display: flex;
@@ -63,10 +61,15 @@ h1, h2, h3 {
 }
 
 footer {
-    height: 60px;
+    height:auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-image: url(/images/H-background.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 100%;
 }
 
 footer a {

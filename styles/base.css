@@ -29,6 +29,7 @@ header {
     font-size: x-large;
 }
 .nav-menu {
+
     list-style: none;
     display: flex;
     gap: 60px;
@@ -83,7 +84,7 @@ footer {
     background-repeat: no-repeat;
     opacity: 100%;
 }
-
+main a,
 footer a {
-    color: var(--light-color);
+    color: var(--primary-color);
 }

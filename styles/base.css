@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(1, 1, 173);
+    --primary-color: rgb(0, 0, 168);
     --light-color: rgb(235, 250, 215);
 }
 
@@ -84,7 +84,6 @@ footer {
     background-repeat: no-repeat;
     opacity: 100%;
 }
-main a,
-footer a {
+a{
     color: var(--primary-color);
 }

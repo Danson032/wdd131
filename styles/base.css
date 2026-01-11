@@ -21,8 +21,11 @@ header {
     flex-direction: column;
     gap: 30%;
 }
-span{
-    color:var(--light-color);
+#course-title {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 4px;
     font-size: x-large;
 }
 .nav-menu {

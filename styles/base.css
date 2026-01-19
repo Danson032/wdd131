@@ -1,0 +1,92 @@
+:root {
+    --primary-color: rgb(0, 0, 168);
+    --light-color: rgb(235, 250, 215);
+    --link-color: rgb(0, 0, 120);
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+    
+header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/H-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+    gap: 30%;
+}
+#course-title {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: x-large;
+}
+.nav-menu {
+
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main section {
+    flex: 1;
+}
+.card {
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+footer {
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/images/H-background.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 100%;
+}
+main a,
+footer a {
+    color: var(--link-color);
+}

@@ -1,6 +1,6 @@
 :root {
     --primary-color: #005f73;
-    --secondary-color: #0a9396;
+    --secondary-color: #005f73;
     --accent-color: #e9d8a6;
     --text-color: #001219;
     --background-color: #ffffff;
@@ -36,7 +36,7 @@ main {
 section {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
 }
 
 h2 {
@@ -52,6 +52,7 @@ h2 {
 
 .weather {
     background-color: var(--accent-color);
+    color: #001219;
 }
 
 .weather img {
@@ -69,5 +70,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }

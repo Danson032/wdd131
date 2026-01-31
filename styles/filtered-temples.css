@@ -69,7 +69,8 @@ main {
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
 figure {
@@ -91,8 +92,8 @@ footer {
 }
 
 .temple-card img {
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 190px;
     object-fit: cover;
     display: block;
 }

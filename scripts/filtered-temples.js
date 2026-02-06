@@ -104,34 +104,35 @@ function displayTemples(templeList) {
 
 displayTemples(temples);
 
-document.getElementById("home").addEventListener("click", () => {
+document.getElementById("home").addEventListener("click", (e) => {
+  e.preventDefault();
   displayTemples(temples);
 });
 
-document.getElementById("old").addEventListener("click", () => {
+document.getElementById("old").addEventListener("click", (e) => {
+  e.preventDefault();
   displayTemples(
-    temples.filter(temple =>
-      new Date(temple.dedicated).getFullYear() < 1900
-    )
+    temples.filter(t => new Date(t.dedicated).getFullYear() < 1900)
   );
 });
 
-document.getElementById("new").addEventListener("click", () => {
+document.getElementById("new").addEventListener("click", (e) => {
+  e.preventDefault();
   displayTemples(
-    temples.filter(temple =>
-      new Date(temple.dedicated).getFullYear() > 2000
-    )
+    temples.filter(t => new Date(t.dedicated).getFullYear() > 2000)
   );
 });
 
-document.getElementById("large").addEventListener("click", () => {
+document.getElementById("large").addEventListener("click", (e) => {
+  e.preventDefault();
   displayTemples(
-    temples.filter(temple => temple.area > 90000)
+    temples.filter(t => t.area > 90000)
   );
 });
 
-document.getElementById("small").addEventListener("click", () => {
+document.getElementById("small").addEventListener("click", (e) => {
+  e.preventDefault();
   displayTemples(
-    temples.filter(temple => temple.area < 10000)
+    temples.filter(t => t.area < 10000)
   );
 });

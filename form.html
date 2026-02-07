@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form id="reviewForm" action="review.html" method="get">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+            </fieldset>
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required>
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <label><input type="checkbox" name="features" value="feature1"> Feature 1</label>
+                <label><input type="checkbox" name="features" value="feature2"> Feature 2</label>
+                <label><input type="checkbox" name="features" value="feature3"> Feature 3</label>
+            </fieldset>
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review" rows="5" placeholder="Write your review here..."></textarea>
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" placeholder="Optional">
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            © <span id="year"></span> | Danson Nganga | Kenya
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span> |
+            Contact: <a href="tel:+254114547608">+254 114 547 608</a>
+        </p>
+    </footer>
+</body>
+
+</html>

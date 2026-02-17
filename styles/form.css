@@ -1,15 +1,14 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
     line-height: 1.6;
-    background-color: #fefefe;
-    color: #0b0b0b;
+    background-color: #a5fefe;
+    color: #201f28;
 }
 
 header,
 footer {
-    background-color: #002b36;
+    background-color: #042448;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -17,62 +16,63 @@ footer {
 }
 
 main {
-    max-width: 600px;
+    max-width: 650px;
     margin: 2rem auto;
     padding: 1.5rem;
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-form label,
-form legend {
+label,
+legend {
     display: block;
     margin-top: 1rem;
-    font-weight: 600;
-    color: #002b36;
+    font-weight: 700;
+    color: #111111;
 }
 
-input[type="text"],
-input[type="date"],
+input,
 select,
-textarea {
+textarea,
+button {
     width: 100%;
     padding: 0.6rem;
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
     border-radius: 6px;
-    border: 1px solid #333333;
+    border: 1px solid #1a1a1a;
+    font-size: 16px;
     box-sizing: border-box;
-    font-size: 1rem;
-    color: #0b0b0b;
-    background-color: #ffffff;
-}
-
-input[type="submit"] {
-    margin-top: 1.5rem;
-    padding: 0.7rem 1.5rem;
-    background-color: #002b36;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #001f28;
 }
 
 fieldset {
-    border: 1px solid #333333;
-    padding: 0.7rem 1rem;
+    border: 1px solid #1a1a1a;
     border-radius: 6px;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
-input[type="checkbox"]+label,
-input[type="radio"]+label {
-    color: #002b36;
+fieldset label {
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+button {
+    background-color: #001f28;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background-color: #003847;
+}
+
+footer p {
+    margin: 0.3rem 0;
 }
 
 @media (max-width: 600px) {
